@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero {
+  text-align: center;
+  align-items: center;
+}
+
+.clicks {
+ padding: 20px;
+}
+
+.button1 {
+  background-color: #ffd000; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px;
+  cursor: pointer;
+  border-radius: 5px;
+}
