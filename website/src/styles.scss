@@ -1,10 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-$background: url('../public/images/background.png');
+//$background: url('../public/images/background.png');
 
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-    background: $background no-repeat center center fixed;
+  //background: $background no-repeat center center fixed;
   background-size: cover;
 }
