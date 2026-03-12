@@ -17,10 +17,20 @@ text-align: center;
 
   }
 
+  th {
+    padding: 15px;
+    background-color: rgba(0, 48, 66, 0.301);
+    border-radius: 10px;
+    font-size: 24px;
+    border: 2px solid rgb(0, 0, 0);
+  }
+
   td {
     padding: 15px;
-    background-color: rgba(0, 162, 255, 0.35);
-
+    background-color: rgba(0, 187, 255, 0.193);
+    border-radius: 10px;
+    font-size: 24px;
+    border: 2px solid rgb(0, 0, 0);
   }
 
   .tRank {

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-leaderboard',
@@ -7,6 +8,9 @@ import { Component } from '@angular/core';
   styleUrl: './leaderboard.component.scss'
 })
 export class LeaderboardComponent {
+  constructor(private router: Router) {}
 
-  
+  navigateToHome() {
+    this.router.navigate(['/home']);
+  }
 }

@@ -10,11 +10,16 @@
     <div class="container-bot">
       <table>
         <tr>
-          <td *ngFor="let card of botCards"><img [src]="botsCardsVisible ? card.url : '../images/Tile_Back.png'" class="card-img" alt="card">
+          <td *ngFor="let card of botCards"><img [src]="botsCardsVisible ? card.url : '../images/Tile_Back.png'"
+              class="card-img" alt="card">
           </td>
         </tr>
       </table>
-      <p>Points: 100</p>
+        <div class="text-left">
+        <p>Total Value: {{ totalBotValue }}</p>
+        <p>Points: 100</p>
+      </div>
+
     </div>
 
     <div class="container-piles">
@@ -22,17 +27,23 @@
       <div class="deck">
         <div class="draw">
           <h2>42</h2>
-          <img src="../images/Tile_Back.png" alt="" class="deck-card">
+          <img [src]="drawCard.url" [alt]="drawCard.title" class="deck-card">
         </div>
         <div class="discard">
-          <img src="../images/Tile_Dragon1.png" alt="" class="deck-card">
+          <img [src]="discardCard.url" alt="" class="deck-card">
           <h2>2</h2>
         </div>
       </div>
     </div>
 
     <div class="container-player">
-      <p>Points: 100</p>
+
+      <div class="text-left">
+        <p>Total Value: {{ totalPlayerValue }}</p>
+        <p>Points: 100</p>
+      </div>
+
+
       <table>
         <tr>
           <td *ngFor="let card of displayedCards"><img [src]="card.url" [alt]="card.title" class="card-img"></td>
@@ -40,15 +51,14 @@
       </table>
       <div class="options">
         <div class="buttons">
-        <button class="button2">Bet higher</button>
-        <button class="button2">Bet lower</button>
+          <button class="button2">Bet higher</button>
+          <button class="button2">Bet lower</button>
         </div>
+        <button class="button2">History</button>
         <h1> Player Username</h1>
       </div>
     </div>
-
   </div>
-
 </div>
 
 
